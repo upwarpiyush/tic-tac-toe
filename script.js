@@ -26,7 +26,8 @@ function initGame()
     boxes.forEach((box, index) =>{
         box.innerText = "";
         boxes[index].style.pointerEvents = "all";
-        boxes[index].classList.remove = "win";
+        // boxes[index].classList.remove = "win";
+        box.classList = `box box${index+1}`;
     });
     newGameBtn.classList.remove("active");
     gameInfo.innerText = `Current Player - ${currentPlayer}`;
