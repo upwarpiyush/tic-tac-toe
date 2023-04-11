@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    /* background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+    /* background: radial-gradient(circle at center, #80f5ed , #f480a9); */
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,41,121,1) 35%, rgba(0,212,255,1) 100%);
+    display: grid;
+    place-items: center;
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: space-around; */
+}
+
+
+.game-info{
+    color: white;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    /* text-align: center; */
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    padding: 0.5rem 3rem;
+}
+
+.tic-tac-toe{
+    width: 90%;
+    max-width: 20rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    aspect-ratio: 1/1;
+    /* margin-top: 2rem; */
+}
+
+.box{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box1, .box2, .box4, .box5{
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.box3, .box6{
+    border-bottom: 2px solid white;
+}
+
+.box7, .box8{
+    border-right: 2px solid white;
+}
+
+
+.btn{
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.btn.active{
+    display: flex;
+}
+
+.win{
+    background-color: rgba(0, 255, 0, 0.3);;
+}
